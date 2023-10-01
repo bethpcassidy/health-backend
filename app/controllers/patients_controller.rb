@@ -1,6 +1,16 @@
 class PatientsController < ApplicationController
   before_action :set_patient, only: %i[ show update destroy ]
 
+
+  # Added phone_number to both patients and doctors
+  # Setup Jbuilder so localhost shows the correct information
+  # Fixed patients controller
+  # Next: Set up associations, plan/execute login authetification, finalize MVP of tables
+  #Think about: what information an appointment should show depending on who is logged in. Associations between doctors and patients. 
+  
+  #Plan out mvp!!
+
+
   # GET /patients
   def index
     @patients = Patient.all
