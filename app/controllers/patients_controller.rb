@@ -2,15 +2,13 @@ class PatientsController < ApplicationController
   before_action :set_patient, only: %i[ show update destroy ]
 
 
-  # Added phone_number to both patients and doctors
-  # Setup Jbuilder so localhost shows the correct information
-  # Fixed patients controller
 
+# sessions fixed
+# login leads to sessions, jwt encryption matched
 
   
   
-  #Think about: what information an appointment should show depending on who is logged in. Associations between doctors and patients. 
-  
+
 
 
 
